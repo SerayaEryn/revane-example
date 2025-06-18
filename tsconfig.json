@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "outDir": "./bin/",
+    "sourceMap": false,
+    "noImplicitAny": false,
+    "module": "ESNext",
+    "moduleResolution": "node",
+    "removeComments": true,
+    "target": "ES2023",
+    "importHelpers": true,
+    "alwaysStrict": true,
+    "strictNullChecks": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true
+  },
+  "include": [
+    "src/**/*",
+    "test/**/*"
+  ],
+  "exclude": [
+    "node_modules",
+    "**/*.spec.ts"
+  ]
+}
