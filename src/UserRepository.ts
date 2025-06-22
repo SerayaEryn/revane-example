@@ -1,17 +1,22 @@
-import { Component } from "revane";
+import { Component, PostConstruct } from "revane";
 
 @Component
 export class UserRepository {
-  users = [
-    {
-      id: 1,
-      name: "Lina",
-    },
-    {
-      id: 2,
-      name: "Peter",
-    },
-  ];
+  users;
+
+  @PostConstruct
+  public postConstruct() {
+    this.users = [
+      {
+        id: 1,
+        name: "Lina",
+      },
+      {
+        id: 2,
+        name: "Peter",
+      },
+    ];
+  }
 
   public getUser(id: number) {
     return this.users.filter((user) => user.id == id)[0];
