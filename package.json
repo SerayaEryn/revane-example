@@ -25,7 +25,7 @@
     "typescript": "^5.8.3"
   },
   "dependencies": {
-    "revane": "^3.1.0",
+    "revane": "^3.2.0-rc.1",
     "tslib": "^2.8.1"
   }
 }
